@@ -1,5 +1,5 @@
-const alphaData = "Venceslas";
-let aphaResult = 0;
+const givenWord = "Venceslas";
+let wordValue = 0;
 
 function getNumericValue(character) {
   // Convert the character to uppercase to handle both lowercase and uppercase letters.
@@ -16,8 +16,8 @@ function getNumericValue(character) {
   return charCode - 64;
 }
 
-for (let i = 0; i < alphaData.length; i++) {
-  aphaResult += getNumericValue(alphaData[i]);
+for (let i = 0; i < givenWord.length; i++) {
+  wordValue += getNumericValue(givenWord[i]);
 }
 
-console.log(` ${alphaData} has numeric value of ${aphaResult}`);
+console.log(` ${givenWord} has numeric value of ${wordValue}`);
