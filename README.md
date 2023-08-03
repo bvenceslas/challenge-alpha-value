@@ -1,2 +1,3 @@
-# Soft_Cbmc
-Project managering meetings for cbmc-goma/RDC
+# challenge-alpha-value
+
+This challenge is designed to calculate the numerical value of given string values
