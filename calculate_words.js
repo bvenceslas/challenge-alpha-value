@@ -1,5 +1,12 @@
-const givenWord = "Venceslas";
+const givenString = "Venceslas is one of the lords";
 let wordValue = 0;
+let charCount = 0;
+let wordCount = 0;
+
+function getWordCount(word) {
+  const splittedWords = word.split(" ");
+  wordCount = splittedWords.length;
+}
 
 function getNumericValue(character) {
   // Convert the character to uppercase to handle both lowercase and uppercase letters.
@@ -16,8 +23,13 @@ function getNumericValue(character) {
   return charCode - 64;
 }
 
-for (let i = 0; i < givenWord.length; i++) {
-  wordValue += getNumericValue(givenWord[i]);
+for (let i = 0; i < givenString.length; i++) {
+  charCount++;
+  wordValue += getNumericValue(givenString[i]);
 }
 
-console.log(` ${givenWord} has numeric value of ${wordValue}`);
+getWordCount(givenString);
+
+console.log(
+  ` The given string has numeric value of ${wordValue}, counts ${charCount} characters and composed of ${wordCount} words`
+);
